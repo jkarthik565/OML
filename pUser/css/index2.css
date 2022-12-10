@@ -1,0 +1,92 @@
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+#slideshow {
+    position:relative;
+    height:272px;
+}
+
+#slideshow DIV {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    height: 272px;
+    background-color: #FFF;
+}
+
+#slideshow DIV.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow DIV.last-active {
+    z-index:9;
+}
+
+#slideshow DIV IMG {
+    height: 272px;
+	width:630px;
+    display: block;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.news_content ul{ padding:0px; margin:0px;}
+.news_content ul li{
+	padding-top:10px;
+	padding-left:5px;
+	list-style:none; 
+	font-size:11px;
+}
+.news_content ul li a{
+	text-decoration:none;
+	color:#7E7E7E;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+.news_content ul li a:hover{
+	text-decoration:underline;
+	color:#09F;
+}
+#table{
+	color:#7E7E7E;
+	font-family:Georgia, "Times New Roman", Times, serif; font-size:11px;}
+
+#apDiv1 {
+	position:absolute;
+	width:630px;
+	height:272px;
+	z-index:1;
+	border:1px solid #FFF;
+	left: 31px;
+	top: 23px;
+}
