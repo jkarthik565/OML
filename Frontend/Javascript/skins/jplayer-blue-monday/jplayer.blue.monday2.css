@@ -1,0 +1,31 @@
+div.mplayer{
+ 
+}
+div.jp-audio,
+div.jp-video {
+  /* Edit the font-size to counteract inherited font sizing.
+   * Eg. 1.25em = 1 / 0.8em
+   */
+  font-size:0.85em;
+  white-space:nowrap;
+  width: 420px;
+}
+
+div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
+	background: url(images/current-play-bullet.gif) no-repeat center left;
+}
+
+div.jp-playlist li img {
+	width: 22px;
+	height: 22px;
+	border: none;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+ul.jp-controls li a.disabled {
+	cursor: default;
+    opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+}
